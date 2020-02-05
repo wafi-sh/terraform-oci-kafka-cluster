@@ -1,0 +1,26 @@
+module "kafka" {
+  source                          = "./modules/kafka"
+  compartment_id                  = var.compartment_id
+  image_id                        = var.image_id
+  kafka_zookeeper_ssh_public_key  = var.kafka_zookeeper_ssh_public_key
+  kafka_zookeeper_ssh_private_key = var.kafka_zookeeper_ssh_private_key
+  kafka_zookeeper_subnet_id       = var.kafka_zookeeper_subnet_id
+  kafka_zookeeper_nsg_ids         = var.kafka_zookeeper_nsg_ids
+  kafka_zookeeper_user            = var.kafka_zookeeper_user
+  bastion_availability_domain     = var.bastion_availability_domain
+  bastion_instance_shape          = var.bastion_instance_shape
+  bastion_display_name            = var.bastion_display_name
+  bastion_ssh_public_key          = var.bastion_ssh_public_key
+  bastion_ssh_private_key         = var.bastion_ssh_private_key
+  bastion_subnet_id               = var.bastion_subnet_id
+  bastion_nsg_ids                 = var.bastion_nsg_ids
+  bastion_user                    = var.bastion_user
+  zookeeper_instance_display_name = var.zookeeper_instance_display_name
+  zookeeper_instance_shape        = var.zookeeper_instance_shape
+  zookeeper_client_port           = var.zookeeper_client_port
+  zookeeper_internal_port         = var.zookeeper_internal_port
+  zookeeper_poll_port             = var.zookeeper_poll_port
+  kafka_instance_display_name     = var.kafka_instance_display_name
+  kafka_instance_shape            = var.kafka_instance_shape
+  kafka_client_port               = var.kafka_client_port
+}
