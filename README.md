@@ -10,3 +10,6 @@ Terraform code to create:
 Assumptions:
 -	Zookeeper and Kafka clusters has only 3 nodes each
 -	The OCI region has at least 3 availability domains
+
+Usage:
+Update details in EXAMPLE.tfvars 
