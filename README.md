@@ -12,4 +12,5 @@ Assumptions:
 -	The OCI region has at least 3 availability domains
 
 Usage:
+
 Update details in EXAMPLE.tfvars 
